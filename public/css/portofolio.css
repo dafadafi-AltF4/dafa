@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: radial-gradient(circle at top, #142049 0%, #060b1f 70%);
+    background-attachment: fixed;
+    color: #e2e8f0;
+    margin: 0;
+    padding: 40px 0;
+    min-height: 100vh;
+}
+
+section {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    width: 80%;
+    max-width: 700px;
+    margin: 25px auto;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+section:hover {
+    transform: translateY(-4px);
+    border-color: rgba(212, 175, 55, 0.5);
+}
+
+/* HERO SECTION */
+#home {
+    text-align: center;
+    padding: 50px 30px;
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.08), rgba(255, 255, 255, 0.03));
+}
+
+.profile-pic {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #d4af37;
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.4);
+    margin-bottom: 20px;
+}
+
+#home h1 {
+    color: #ffffff;
+    margin: 10px 0 5px;
+    font-size: 30px;
+    letter-spacing: 0.5px;
+}
+
+.subtitle {
+    color: #9fb3d1;
+    font-size: 15px;
+    margin: 0;
+}
+
+/* HEADINGS */
+h2 {
+    color: #ffffff;
+    border-bottom: 2px solid #d4af37;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+}
+
+h2 i {
+    color: #d4af37;
+}
+
+p {
+    line-height: 1.7;
+    color: #cbd5e1;
+}
+
+/* SKILL & HOBI BADGES */
+.badge-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.badge {
+    background: rgba(212, 175, 55, 0.12);
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    color: #f0d78c;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s ease;
+}
+
+.badge:hover {
+    background: rgba(212, 175, 55, 0.25);
+}
+
+.badge-alt {
+    background: rgba(56, 189, 248, 0.12);
+    border: 1px solid rgba(56, 189, 248, 0.4);
+    color: #7dd3fc;
+}
+
+.badge-alt:hover {
+    background: rgba(56, 189, 248, 0.25);
+}
+
+/* SOCIAL / CONTACT */
+.social-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    text-decoration: none;
+    color: #e2e8f0;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.social-link:hover {
+    background: rgba(212, 175, 55, 0.1);
+    border-color: rgba(212, 175, 55, 0.4);
+    transform: translateX(4px);
+}
+
+.social-link i {
+    font-size: 20px;
+    color: #d4af37;
+    width: 24px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    section {
+        width: 90%;
+        padding: 20px;
+    }
+}
